@@ -14,7 +14,7 @@
 
 ## 🎯 Live Demo
 
-🌐 **[View Live Website](https://your-username.github.io/wheelhouse-website)** *(Update this link after deployment)*
+🌐 **[View Live Website](https://tigerdejonge.github.io/wheelhouse/)**
 
 ## 🚀 Quick Start
 
@@ -27,8 +27,8 @@
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/your-username/wheelhouse-website.git
-   cd wheelhouse-website
+   git clone https://github.com/tigerdejonge/wheelhouse.git
+   cd wheelhouse
    ```
 
 2. **Install dependencies**
@@ -48,19 +48,17 @@
 ### Alternative Viewing Methods
 
 **Option 1: Direct File Opening**
-- Open `src/index.html` directly in your browser
+- Open `index.html` directly in your browser
 - Note: Some features may not work due to CORS restrictions
 
 **Option 2: Using Python Server**
 ```bash
-cd src
 python -m http.server 8000
 # Visit: http://localhost:8000
 ```
 
 **Option 3: Using PHP Server**
 ```bash
-cd src
 php -S localhost:8000
 # Visit: http://localhost:8000
 ```
@@ -68,15 +66,15 @@ php -S localhost:8000
 ## 📁 Project Structure
 
 ```
-wheelhouse-website/
-├── src/                          # Source files
-│   ├── index.html               # Main HTML file
-│   ├── styles/
-│   │   └── main.css            # All CSS styles and animations
-│   ├── scripts/
-│   │   └── app.js              # JavaScript functionality
-│   └── components/             # HTML components (if any)
-├── assets/                      # Static assets
+wheelhouse/
+├── index.html                   # Main HTML file
+├── styles/
+│   └── main.css                # All CSS styles and animations
+├── scripts/
+│   └── app.js                  # JavaScript functionality
+├── src/                        # Source components (if any)
+│   └── components/             # HTML components
+├── assets/                     # Static assets
 │   ├── fonts/                  # Custom fonts
 │   ├── icons/                  # Icon files
 │   └── animations/             # Animation files
@@ -162,18 +160,18 @@ The website is fully responsive and optimized for:
 ### Netlify
 1. Connect your GitHub repository
 2. Set build command: `npm run build` (optional)
-3. Set publish directory: `src/`
+3. Set publish directory: `/` (root)
 4. Deploy automatically on push
 
 ### Vercel
 1. Connect GitHub repository
-2. Set output directory: `src/`
+2. Set output directory: `/` (root)
 3. Deploy with zero configuration
 
 ## 🔧 Customization
 
 ### Colors & Branding
-Edit CSS variables in `src/styles/main.css`:
+Edit CSS variables in `styles/main.css`:
 ```css
 :root {
     --primary-color: #0066ff;
@@ -184,12 +182,12 @@ Edit CSS variables in `src/styles/main.css`:
 ```
 
 ### Content
-- Update company information in `src/index.html`
+- Update company information in `index.html`
 - Modify service offerings and case studies
 - Add your own images to `assets/` folder
 
 ### Functionality
-- Customize ROI calculator parameters in `src/scripts/app.js`
+- Customize ROI calculator parameters in `scripts/app.js`
 - Add more demo features or modify existing ones
 - Update contact information and forms
 

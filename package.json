@@ -2,9 +2,9 @@
   "name": "wheelhouse-website",
   "version": "1.0.0",
   "description": "A futuristic website for Wheelhouse, an AI consulting company specializing in cloud and AI integration.",
-  "main": "src/index.html",
+  "main": "index.html",
   "scripts": {
-    "start": "live-server src",
+    "start": "live-server .",
     "build": "echo 'Build process to be defined'",
     "test": "echo 'Test process to be defined'"
   },
