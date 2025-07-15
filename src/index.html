@@ -1,0 +1,830 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wheelhouse - AI Consulting</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-cog"></i>
+                Wheelhouse
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#hero" class="nav-link">Home</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#solutions" class="nav-link">Solutions</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero-section">
+            <div class="hero-background">
+                <div class="particle" style="--i:1"></div>
+                <div class="particle" style="--i:2"></div>
+                <div class="particle" style="--i:3"></div>
+                <div class="particle" style="--i:4"></div>
+                <div class="particle" style="--i:5"></div>
+            </div>
+            <div class="hero-content animate fade-in-up">
+                <h1 class="hero-title">
+                    Revolutionize Your Business with 
+                    <span class="gradient-text">AI & Cloud</span>
+                </h1>
+                <p class="hero-subtitle">Transform your organization with cutting-edge AI solutions and seamless cloud integration. We're your strategic partner in the digital future.</p>
+                <div class="hero-buttons">
+                    <a href="#services" class="cta-button primary">
+                        <i class="fas fa-rocket"></i>
+                        Discover Our Services
+                    </a>
+                    <a href="#contact" class="cta-button secondary">
+                        <i class="fas fa-calendar"></i>
+                        Schedule a Call
+                    </a>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <div class="scroll-arrow"></div>
+            </div>
+        </section>
+
+        <!-- Services Section with Tabs -->
+        <section id="services" class="services-section animate fade-in-up">
+            <div class="container">
+                <h2 class="section-title">Our Services</h2>
+                <p class="section-subtitle">Comprehensive AI and Cloud solutions tailored to your needs</p>
+                
+                <div class="tabs-container">
+                    <div class="tabs-nav">
+                        <button class="tab-button active" data-tab="ai-consulting">
+                            <i class="fas fa-brain"></i>
+                            AI Consulting
+                        </button>
+                        <button class="tab-button" data-tab="cloud-integration">
+                            <i class="fas fa-cloud"></i>
+                            Cloud Integration
+                        </button>
+                        <button class="tab-button" data-tab="automation">
+                            <i class="fas fa-robot"></i>
+                            Automation
+                        </button>
+                        <button class="tab-button" data-tab="analytics">
+                            <i class="fas fa-chart-line"></i>
+                            Analytics
+                        </button>
+                    </div>
+                    
+                    <div class="tabs-content">
+                        <div class="tab-pane active" id="ai-consulting">
+                            <div class="service-grid">
+                                <div class="service-card">
+                                    <div class="service-icon">
+                                        <i class="fas fa-lightbulb"></i>
+                                    </div>
+                                    <h3>AI Strategy</h3>
+                                    <p>Develop comprehensive AI strategies aligned with your business objectives and industry requirements.</p>
+                                </div>
+                                <div class="service-card">
+                                    <div class="service-icon">
+                                        <i class="fas fa-cogs"></i>
+                                    </div>
+                                    <h3>ML Implementation</h3>
+                                    <p>Custom machine learning solutions designed to solve your specific business challenges.</p>
+                                </div>
+                                <div class="service-card">
+                                    <div class="service-icon">
+                                        <i class="fas fa-comments"></i>
+                                    </div>
+                                    <h3>NLP Solutions</h3>
+                                    <p>Advanced natural language processing for enhanced customer interactions and data insights.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="tab-pane" id="cloud-integration">
+                            <div class="service-grid">
+                                <div class="service-card">
+                                    <div class="service-icon">
+                                        <i class="fas fa-upload"></i>
+                                    </div>
+                                    <h3>Cloud Migration</h3>
+                                    <p>Seamless migration of your existing infrastructure to modern cloud platforms.</p>
+                                </div>
+                                <div class="service-card">
+                                    <div class="service-icon">
+                                        <i class="fas fa-server"></i>
+                                    </div>
+                                    <h3>Infrastructure</h3>
+                                    <p>Scalable cloud infrastructure designed for performance, security, and cost efficiency.</p>
+                                </div>
+                                <div class="service-card">
+                                    <div class="service-icon">
+                                        <i class="fas fa-shield-alt"></i>
+                                    </div>
+                                    <h3>Security</h3>
+                                    <p>Enterprise-grade security solutions to protect your cloud assets and data.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="tab-pane" id="automation">
+                            <div class="service-grid">
+                                <div class="service-card">
+                                    <div class="service-icon">
+                                        <i class="fas fa-tasks"></i>
+                                    </div>
+                                    <h3>Process Automation</h3>
+                                    <p>Streamline business processes with intelligent automation solutions.</p>
+                                </div>
+                                <div class="service-card">
+                                    <div class="service-icon">
+                                        <i class="fas fa-sync"></i>
+                                    </div>
+                                    <h3>Workflow Optimization</h3>
+                                    <p>Optimize existing workflows for maximum efficiency and productivity.</p>
+                                </div>
+                                <div class="service-card">
+                                    <div class="service-icon">
+                                        <i class="fas fa-magic"></i>
+                                    </div>
+                                    <h3>AI-Powered Tools</h3>
+                                    <p>Custom AI tools and bots to enhance your team's capabilities.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="tab-pane" id="analytics">
+                            <div class="service-grid">
+                                <div class="service-card">
+                                    <div class="service-icon">
+                                        <i class="fas fa-chart-bar"></i>
+                                    </div>
+                                    <h3>Data Visualization</h3>
+                                    <p>Transform complex data into actionable insights with stunning visualizations.</p>
+                                </div>
+                                <div class="service-card">
+                                    <div class="service-icon">
+                                        <i class="fas fa-search"></i>
+                                    </div>
+                                    <h3>Predictive Analytics</h3>
+                                    <p>Leverage machine learning for predictive insights and forecasting.</p>
+                                </div>
+                                <div class="service-card">
+                                    <div class="service-icon">
+                                        <i class="fas fa-dashboard"></i>
+                                    </div>
+                                    <h3>Real-time Dashboards</h3>
+                                    <p>Monitor your business metrics with real-time, interactive dashboards.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Solutions Section -->
+        <section id="solutions" class="solutions-section animate fade-in-up">
+            <div class="container">
+                <h2 class="section-title">Industry Solutions</h2>
+                <div class="solutions-grid">
+                    <div class="solution-card">
+                        <div class="solution-icon">
+                            <i class="fas fa-heartbeat"></i>
+                        </div>
+                        <h3>Healthcare</h3>
+                        <p>AI-powered diagnostic tools and patient management systems</p>
+                        <div class="solution-features">
+                            <span class="feature-tag">Medical AI</span>
+                            <span class="feature-tag">HIPAA Compliant</span>
+                        </div>
+                    </div>
+                    <div class="solution-card">
+                        <div class="solution-icon">
+                            <i class="fas fa-coins"></i>
+                        </div>
+                        <h3>Finance</h3>
+                        <p>Fraud detection, risk assessment, and automated trading solutions</p>
+                        <div class="solution-features">
+                            <span class="feature-tag">Risk Analysis</span>
+                            <span class="feature-tag">Compliance</span>
+                        </div>
+                    </div>
+                    <div class="solution-card">
+                        <div class="solution-icon">
+                            <i class="fas fa-shopping-cart"></i>
+                        </div>
+                        <h3>Retail</h3>
+                        <p>Personalized recommendations and inventory optimization</p>
+                        <div class="solution-features">
+                            <span class="feature-tag">Personalization</span>
+                            <span class="feature-tag">Inventory AI</span>
+                        </div>
+                    </div>
+                    <div class="solution-card">
+                        <div class="solution-icon">
+                            <i class="fas fa-industry"></i>
+                        </div>
+                        <h3>Manufacturing</h3>
+                        <p>Predictive maintenance and quality control systems</p>
+                        <div class="solution-features">
+                            <span class="feature-tag">IoT Integration</span>
+                            <span class="feature-tag">Predictive Analytics</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about-section animate fade-in-up">
+            <div class="container">
+                <div class="about-content">
+                    <div class="about-text">
+                        <h2 class="section-title">Why Choose Wheelhouse?</h2>
+                        <p>We're not just consultants – we're your strategic technology partners. With deep expertise in AI and cloud technologies, we help organizations navigate the complex landscape of digital transformation.</p>
+                        <div class="stats-grid">
+                            <div class="stat-item">
+                                <div class="stat-number" data-target="150">0</div>
+                                <div class="stat-label">Projects Completed</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-number" data-target="98">0</div>
+                                <div class="stat-label">Client Satisfaction</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-number" data-target="50">0</div>
+                                <div class="stat-label">AI Models Deployed</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-visual">
+                        <div class="tech-stack">
+                            <div class="tech-item">
+                                <i class="fab fa-aws"></i>
+                                <span>AWS</span>
+                            </div>
+                            <div class="tech-item">
+                                <i class="fab fa-microsoft"></i>
+                                <span>Azure</span>
+                            </div>
+                            <div class="tech-item">
+                                <i class="fab fa-google"></i>
+                                <span>GCP</span>
+                            </div>
+                            <div class="tech-item">
+                                <i class="fab fa-python"></i>
+                                <span>Python</span>
+                            </div>
+                            <div class="tech-item">
+                                <i class="fas fa-brain"></i>
+                                <span>TensorFlow</span>
+                            </div>
+                            <div class="tech-item">
+                                <i class="fas fa-cube"></i>
+                                <span>Docker</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section animate fade-in-up">
+            <div class="container">
+                <h2 class="section-title">Ready to Transform Your Business?</h2>
+                <p class="section-subtitle">Let's discuss how AI and cloud technologies can accelerate your growth</p>
+                
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Email Us</h4>
+                                <p>hello@wheelhouse.ai</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Call Us</h4>
+                                <p>+1 (555) 123-4567</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Visit Us</h4>
+                                <p>San Francisco, CA</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <input type="text" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" placeholder="Company" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Tell us about your project" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="cta-button primary">
+                            <i class="fas fa-paper-plane"></i>
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- ROI Calculator Section -->
+        <section id="roi-calculator" class="roi-section animate fade-in-up">
+            <div class="container">
+                <h2 class="section-title">Calculate Your AI ROI</h2>
+                <p class="section-subtitle">See how much time and money you could save with our AI solutions</p>
+                
+                <div class="roi-calculator">
+                    <div class="calculator-inputs">
+                        <div class="input-group">
+                            <label>Number of employees in your organization</label>
+                            <input type="range" id="employeeCount" min="10" max="10000" value="100" class="range-slider">
+                            <span class="range-value" id="employeeValue">100</span>
+                        </div>
+                        
+                        <div class="input-group">
+                            <label>Average hourly rate ($)</label>
+                            <input type="range" id="hourlyRate" min="25" max="200" value="50" class="range-slider">
+                            <span class="range-value" id="rateValue">50</span>
+                        </div>
+                        
+                        <div class="input-group">
+                            <label>Hours per week spent on repetitive tasks</label>
+                            <input type="range" id="repetitiveHours" min="1" max="40" value="10" class="range-slider">
+                            <span class="range-value" id="hoursValue">10</span>
+                        </div>
+                        
+                        <div class="input-group">
+                            <label>Expected automation efficiency (%)</label>
+                            <input type="range" id="efficiency" min="30" max="90" value="70" class="range-slider">
+                            <span class="range-value" id="efficiencyValue">70</span>
+                        </div>
+                    </div>
+                    
+                    <div class="calculator-results">
+                        <div class="result-card primary">
+                            <div class="result-icon">
+                                <i class="fas fa-dollar-sign"></i>
+                            </div>
+                            <div class="result-content">
+                                <h3>Annual Savings</h3>
+                                <div class="result-amount" id="annualSavings">$182,000</div>
+                                <p>Cost reduction per year</p>
+                            </div>
+                        </div>
+                        
+                        <div class="result-card secondary">
+                            <div class="result-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="result-content">
+                                <h3>Time Saved</h3>
+                                <div class="result-amount" id="timeSaved">7,280</div>
+                                <p>Hours saved annually</p>
+                            </div>
+                        </div>
+                        
+                        <div class="result-card accent">
+                            <div class="result-icon">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                            <div class="result-content">
+                                <h3>ROI</h3>
+                                <div class="result-amount" id="roiPercentage">364%</div>
+                                <p>Return on investment</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="roi-cta">
+                    <a href="#contact" class="cta-button primary large">
+                        <i class="fas fa-rocket"></i>
+                        Get Your Custom ROI Report
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Client Showcase Section -->
+        <section id="clients" class="clients-section animate fade-in-up">
+            <div class="container">
+                <h2 class="section-title">Trusted by Industry Leaders</h2>
+                <p class="section-subtitle">Join 200+ companies transforming their operations with our AI solutions</p>
+                
+                <div class="client-logos">
+                    <div class="logo-track">
+                        <div class="client-logo"><span>TechCorp</span></div>
+                        <div class="client-logo"><span>DataFlow</span></div>
+                        <div class="client-logo"><span>CloudSync</span></div>
+                        <div class="client-logo"><span>AI Dynamics</span></div>
+                        <div class="client-logo"><span>FutureGen</span></div>
+                        <div class="client-logo"><span>SmartOps</span></div>
+                        <div class="client-logo"><span>InnovateLab</span></div>
+                        <div class="client-logo"><span>QuantumEdge</span></div>
+                        <!-- Duplicate for seamless loop -->
+                        <div class="client-logo"><span>TechCorp</span></div>
+                        <div class="client-logo"><span>DataFlow</span></div>
+                        <div class="client-logo"><span>CloudSync</span></div>
+                        <div class="client-logo"><span>AI Dynamics</span></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Case Studies Section -->
+        <section id="case-studies" class="case-studies-section animate fade-in-up">
+            <div class="container">
+                <h2 class="section-title">Transformative Results</h2>
+                <p class="section-subtitle">Real impact delivered to real companies</p>
+                
+                <div class="case-studies-grid">
+                    <div class="case-study-card">
+                        <div class="case-study-header">
+                            <div class="case-study-icon manufacturing">
+                                <i class="fas fa-industry"></i>
+                            </div>
+                            <div class="case-study-info">
+                                <h3>Manufacturing Giant</h3>
+                                <p>Predictive Maintenance System</p>
+                            </div>
+                        </div>
+                        <div class="case-study-metrics">
+                            <div class="metric">
+                                <div class="metric-value">87%</div>
+                                <div class="metric-label">Downtime Reduction</div>
+                            </div>
+                            <div class="metric">
+                                <div class="metric-value">$2.3M</div>
+                                <div class="metric-label">Annual Savings</div>
+                            </div>
+                        </div>
+                        <div class="case-study-description">
+                            <p>Implemented AI-powered predictive maintenance across 15 factories, preventing equipment failures before they occur.</p>
+                        </div>
+                        <div class="case-study-tags">
+                            <span class="tag">IoT Integration</span>
+                            <span class="tag">Machine Learning</span>
+                            <span class="tag">Real-time Analytics</span>
+                        </div>
+                    </div>
+                    
+                    <div class="case-study-card">
+                        <div class="case-study-header">
+                            <div class="case-study-icon finance">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                            <div class="case-study-info">
+                                <h3>Financial Services</h3>
+                                <p>Fraud Detection AI</p>
+                            </div>
+                        </div>
+                        <div class="case-study-metrics">
+                            <div class="metric">
+                                <div class="metric-value">99.7%</div>
+                                <div class="metric-label">Accuracy Rate</div>
+                            </div>
+                            <div class="metric">
+                                <div class="metric-value">95%</div>
+                                <div class="metric-label">False Positive Reduction</div>
+                            </div>
+                        </div>
+                        <div class="case-study-description">
+                            <p>Revolutionary fraud detection system processing millions of transactions daily with unprecedented accuracy.</p>
+                        </div>
+                        <div class="case-study-tags">
+                            <span class="tag">Deep Learning</span>
+                            <span class="tag">Real-time Processing</span>
+                            <span class="tag">Risk Assessment</span>
+                        </div>
+                    </div>
+                    
+                    <div class="case-study-card">
+                        <div class="case-study-header">
+                            <div class="case-study-icon healthcare">
+                                <i class="fas fa-heartbeat"></i>
+                            </div>
+                            <div class="case-study-info">
+                                <h3>Healthcare Network</h3>
+                                <p>Diagnostic AI Assistant</p>
+                            </div>
+                        </div>
+                        <div class="case-study-metrics">
+                            <div class="metric">
+                                <div class="metric-value">92%</div>
+                                <div class="metric-label">Diagnostic Accuracy</div>
+                            </div>
+                            <div class="metric">
+                                <div class="metric-value">60%</div>
+                                <div class="metric-label">Faster Diagnosis</div>
+                            </div>
+                        </div>
+                        <div class="case-study-description">
+                            <p>AI-powered diagnostic assistant helping doctors make faster, more accurate diagnoses across multiple specialties.</p>
+                        </div>
+                        <div class="case-study-tags">
+                            <span class="tag">Computer Vision</span>
+                            <span class="tag">NLP</span>
+                            <span class="tag">Medical AI</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="case-studies-cta">
+                    <a href="#contact" class="cta-button secondary">
+                        <i class="fas fa-file-alt"></i>
+                        View All Case Studies
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Interactive Demo Section -->
+        <section id="demo" class="demo-section animate fade-in-up">
+            <div class="container">
+                <h2 class="section-title">Experience AI in Action</h2>
+                <p class="section-subtitle">Try our interactive AI demonstrations</p>
+                
+                <div class="demo-container">
+                    <div class="demo-tabs">
+                        <button class="demo-tab active" data-demo="chatbot">
+                            <i class="fas fa-comments"></i>
+                            AI Chatbot
+                        </button>
+                        <button class="demo-tab" data-demo="vision">
+                            <i class="fas fa-eye"></i>
+                            Computer Vision
+                        </button>
+                        <button class="demo-tab" data-demo="analysis">
+                            <i class="fas fa-chart-bar"></i>
+                            Data Analysis
+                        </button>
+                    </div>
+                    
+                    <div class="demo-content">
+                        <div class="demo-pane active" id="chatbot-demo">
+                            <div class="chatbot-interface">
+                                <div class="chat-header">
+                                    <div class="chat-avatar">
+                                        <i class="fas fa-robot"></i>
+                                    </div>
+                                    <div class="chat-info">
+                                        <h4>Wheelhouse AI Assistant</h4>
+                                        <span class="status online">Online</span>
+                                    </div>
+                                </div>
+                                <div class="chat-messages" id="chatMessages">
+                                    <div class="message bot">
+                                        <div class="message-avatar">
+                                            <i class="fas fa-robot"></i>
+                                        </div>
+                                        <div class="message-content">
+                                            <p>Hello! I'm your AI assistant. Ask me about cloud migration, AI implementation, or any technical questions!</p>
+                                            <span class="message-time">Just now</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="chat-input">
+                                    <input type="text" placeholder="Type your question..." id="chatInput">
+                                    <button id="sendMessage">
+                                        <i class="fas fa-paper-plane"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="demo-pane" id="vision-demo">
+                            <div class="vision-interface">
+                                <div class="upload-area" id="imageUpload">
+                                    <i class="fas fa-cloud-upload-alt"></i>
+                                    <h4>Upload an Image</h4>
+                                    <p>Try our computer vision AI - upload any image for analysis</p>
+                                    <button class="upload-btn">Choose Image</button>
+                                </div>
+                                <div class="analysis-results" id="analysisResults" style="display: none;">
+                                    <h4>Analysis Results</h4>
+                                    <div class="results-grid">
+                                        <div class="result-item">
+                                            <span class="label">Objects Detected:</span>
+                                            <span class="value" id="objectCount">0</span>
+                                        </div>
+                                        <div class="result-item">
+                                            <span class="label">Confidence:</span>
+                                            <span class="value" id="confidenceLevel">0%</span>
+                                        </div>
+                                        <div class="result-item">
+                                            <span class="label">Processing Time:</span>
+                                            <span class="value" id="processingTime">0ms</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="demo-pane" id="analysis-demo">
+                            <div class="analysis-interface">
+                                <div class="data-visualization">
+                                    <h4>Real-time Data Analysis</h4>
+                                    <div class="chart-container">
+                                        <canvas id="demoChart" width="400" height="200"></canvas>
+                                    </div>
+                                    <div class="chart-controls">
+                                        <button class="chart-btn active" data-chart="revenue">Revenue Forecast</button>
+                                        <button class="chart-btn" data-chart="efficiency">Efficiency Gains</button>
+                                        <button class="chart-btn" data-chart="costs">Cost Reduction</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section id="testimonials" class="testimonials-section animate fade-in-up">
+            <div class="container">
+                <h2 class="section-title">What Our Clients Say</h2>
+                <p class="section-subtitle">Hear from organizations we've transformed</p>
+                
+                <div class="testimonials-slider">
+                    <div class="testimonial-card">
+                        <div class="testimonial-quote">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                        <div class="testimonial-content">
+                            <p>"Wheelhouse's AI solutions have drastically improved our operational efficiency. Their expertise is unmatched!"</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-info">
+                                <div class="author-photo">
+                                    <img src="images/client1.jpg" alt="Client Photo">
+                                </div>
+                                <div class="author-details">
+                                    <h4>Jane Doe</h4>
+                                    <p>CTO, Tech Innovators</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-card">
+                        <div class="testimonial-quote">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                        <div class="testimonial-content">
+                            <p>"The team at Wheelhouse guided us through our digital transformation with expertise and professionalism."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-info">
+                                <div class="author-photo">
+                                    <img src="images/client2.jpg" alt="Client Photo">
+                                </div>
+                                <div class="author-details">
+                                    <h4>John Smith</h4>
+                                    <p>CEO, Business Solutions</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-card">
+                        <div class="testimonial-quote">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                        <div class="testimonial-content">
+                            <p>"Thanks to Wheelhouse, we've seen a 50% reduction in operational costs. Highly recommend their services!"</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-info">
+                                <div class="author-photo">
+                                    <img src="images/client3.jpg" alt="Client Photo">
+                                </div>
+                                <div class="author-details">
+                                    <h4>Emily White</h4>
+                                    <p>CFO, Finance Gurus</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Floating Action Menu -->
+    <div class="floating-menu" id="floatingMenu">
+        <div class="floating-main-btn" id="floatingMainBtn">
+            <i class="fas fa-plus"></i>
+        </div>
+        <div class="floating-menu-items">
+            <a href="#contact" class="floating-item" data-tooltip="Contact Us">
+                <i class="fas fa-envelope"></i>
+            </a>
+            <a href="#roi-calculator" class="floating-item" data-tooltip="ROI Calculator">
+                <i class="fas fa-calculator"></i>
+            </a>
+            <a href="#demo" class="floating-item" data-tooltip="Try Demo">
+                <i class="fas fa-play"></i>
+            </a>
+            <a href="tel:+15551234567" class="floating-item" data-tooltip="Call Now">
+                <i class="fas fa-phone"></i>
+            </a>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-cog"></i>
+                        Wheelhouse
+                    </div>
+                    <p>Transforming businesses through AI and cloud innovation.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#services">AI Consulting</a></li>
+                        <li><a href="#services">Cloud Integration</a></li>
+                        <li><a href="#services">Automation</a></li>
+                        <li><a href="#services">Analytics</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="#">Case Studies</a></li>
+                        <li><a href="#">Documentation</a></li>
+                        <li><a href="#">Support</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Wheelhouse. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts/app.js"></script>
+</body>
+</html>
